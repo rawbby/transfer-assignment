@@ -10,7 +10,6 @@ jobs:
     - uses: rojopolis/spellcheck-github-actions@0.45.0
       name: Spellcheck
       with:
-        config_path: .spellcheck.yml
         source_files: **/*.md
         task_name: Markdown
         output_file: spellcheck-output.txt
