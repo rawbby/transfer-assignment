@@ -1,0 +1,29 @@
+name: Spell Check
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  spell-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Spelling Action
+        uses: check-spelling/check-spelling@v0.0.21
+        with:
+          config: .github/actions/spell-check-config
+          spell-check-this: |
+            *.md
+
+      - name: Annotate misspellings
+        if: always()
+        uses: check-spelling/check-spelling@v0.0.21
+        with:
+          report: true
