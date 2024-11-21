@@ -1,29 +1,13 @@
-name: Spell Check
+name: Spellcheck Action
 
-on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
+on: push
 
 jobs:
-  spell-check:
+  build:
+    name: Spellcheck
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+    - uses: actions/checkout@v3
+    - uses: rojopolis/spellcheck-github-actions@v0
+      name: Spellcheck
 
-      - name: Setup Spelling Action
-        uses: check-spelling/check-spelling@v0.0.21
-        with:
-          config: .github/actions/spell-check-config
-          spell-check-this: |
-            *.md
-
-      - name: Annotate misspellings
-        if: always()
-        uses: check-spelling/check-spelling@v0.0.21
-        with:
-          report: true
