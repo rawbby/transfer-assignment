@@ -1,0 +1,6 @@
+##Strengths
+
+- collaboration
+- versioning
+
+##Weaknesses
