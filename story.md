@@ -1,0 +1,2 @@
+In a bustling office of a tech startup, the development team was in the middle of their sprint to launch a critical feature. Mia, the lead developer, was meticulously reviewing merge requests. However, a junior developer, Alex, had accidentally committed directly to the main branch without proper review. Panic spread when the team discovered that Alex's changes had overwritten some crucial configurations, causing the deployment pipeline to break. Mia quickly assessed the situation, leveraging Git's power to identify the exact commit causing the issue.
+
