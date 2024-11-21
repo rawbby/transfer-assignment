@@ -6,3 +6,4 @@
 ##Weaknesses
 
 - collisions
+- space overhead
