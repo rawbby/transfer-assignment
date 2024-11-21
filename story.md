@@ -1,3 +1,5 @@
+# Git Saves the Day: How a Team Turned a Coding Mishap into a Learning Triumph
+
 In a bustling office of a tech startup, the development team was in the middle of their sprint to launch a critical feature. Mia, the lead developer, was meticulously reviewing merge requests. However, a junior developer, Alex, had accidentally committed directly to the main branch without proper review. Panic spread when the team discovered that Alex's changes had overwritten some crucial configurations, causing the deployment pipeline to break. Mia quickly assessed the situation, leveraging Git's power to identify the exact commit causing the issue.
 
 With calm precision, Mia used git log to locate Alex's commit hash and then employed git revert to roll back the problematic changes without affecting the history. She explained to Alex how important branch discipline was, emphasizing creating feature branches for any changes. The team rallied together, with Alex creating a new branch and submitting a merge request for a proper review. Mia's leadership turned the incident into a learning opportunity, strengthening the team's Git workflow practices.
