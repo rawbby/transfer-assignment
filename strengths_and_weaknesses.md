@@ -4,3 +4,5 @@
 - versioning
 
 ##Weaknesses
+
+- collisions
